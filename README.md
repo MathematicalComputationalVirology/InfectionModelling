@@ -4,6 +4,6 @@ This code as currently configured runs 1 repeat of the treatment-free control ca
 
 On a desktop computer (~2Ghz processor) the code should take around 10mins to run and uses <1Gb of RAM.
 
-The code is available for use by anyone, however if in a academic context, we would appreciate a citation; the details of which will be added following publication of the paper.
+IntercellularModel folder contains Matlab codes that are used for the simulation of the COVID-19 within-host infection. 
 
-IntercellularModel folder contains Matlab codes that are used for the simulation of the COVID-19 with-in host infection. 
+These codes are available for use by anyone, however if in an academic context, we would appreciate a citation; the details of which will be added following publication of the paper.
