@@ -2,7 +2,7 @@
 %initial guesses for parameters
 % param0 = [bet delt a1 m p3 k c alph pm rm];
 
-param0 = [2.07e-7 0.248 0.9 0.047 2.18e-3 2.37e-10 1.24 1.72e-8 1.33e-5 1.98];
+param0 = [0 0 0 ...];
 %minimization algorithm
 param=fminsearch(@ssq_paper,param0,[]);
 
@@ -34,9 +34,9 @@ eta = 1;
  
 %patient 1's data
 %time in days
-xdata = [2, 8, 10, 12, 13, 14, 15, 16]+4;
-%virus DNA per ml
-ydata = [18007, 506, 3253, 68, 68, 1332, 68, 68];
+xdata = [1, 2, 3, ...];
+%virus RNA per ml
+ydata = [1, 2, 3, ...];
 %initial conditions
 y0=[1e+11 0 0 0.1 0 0]; 
 %ODE solver
@@ -47,8 +47,8 @@ end
 options=odeset('RelTol',1e-10,'AbsTol',err); 
 [t, y] = ode45(@Abone_de,[0 30],y0,options);
 %variable to be fitted
-% V0=y(:,4);
-V0 = [0, 0, 0, 0, 0, 0, 0, 0];
+
+V0 = [0, 0, 0, ...];
 %residual sum of squares
 
 for i = 1:length(xdata)
@@ -60,7 +60,7 @@ for i = 1:length(xdata)
      end
 end
 
-ssq = norm(log(ydata)-log(V0));
+ssq = norm(log10(ydata)-log10(V0));
 
 end
 
