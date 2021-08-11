@@ -14,4 +14,5 @@ CP_treatment_analysis.m analyses the impact of changing of the treatment start a
 
 min_search.m uses fminsearch function to fit the intercellular model to patient data.
 
-These codes are available for use by anyone, however if in an academic context, we would appreciate a citation; the details of which will be added following publication of the paper.
+These codes are available for use by anyone, however if in an academic context, we would appreciate a citation:
+Fatehi F, Bingham RJ, Dykeman EC, Stockley PG, Twarock R. 2021 Comparing antiviral strategies against COVID-19 via multiscale within-host modelling. R. Soc. Open Sci. 8: 210082. https://doi.org/10.1098/rsos.210082
